@@ -1,0 +1,95 @@
+<div class="pr-5 bg-slate-200 max-md:pr-5">
+  <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+    <nav class="flex flex-col w-[27%] max-md:ml-0 max-md:w-full">
+      <div class="flex flex-col grow items-start py-20 pr-20 pl-6 mx-auto w-full text-xl font-semibold text-white bg-slate-700 max-md:px-5 max-md:mt-8">
+        <div class="self-center text-4xl font-extrabold">SIBACA</div>
+        <div class="flex gap-5 mt-11 whitespace-nowrap max-md:mt-10">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b60de2b05833aae014f700c15004065d740f7d013e04abe31fc4ffff3485b48b?" class="shrink-0 aspect-[1.03] w-[30px]" />
+          <div class="flex-auto my-auto"><a href="dashboardMhs">Dashboard</a></div>
+        </div>
+        <div class="flex gap-5 mt-9">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e365d1cf19fd1044d2daa4f94170b7f2820a62d9c007c82d8d8a3d92dc531247?" class="shrink-0 aspect-[0.86] w-[25px]" />
+          <div class="flex-auto my-auto"><a href="LihatBuku">Lihat Buku</a></div>
+        </div>
+        <div class="flex gap-5 mt-8">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7089de8e39479018adcd656b47318a42920e119966f6c5dd3b5cc790b623c66e?" class="shrink-0 aspect-[0.86] w-[25px]" />
+          <div class="flex-auto"><a href="PinjamBuku">Pinjam Buku</a></div>
+        </div>
+        <div class="flex gap-5 mt-8">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/10ca86c0fa9f5c4743f2eac8520827b728b57241d504744cbd15b00d130920c4?" class="shrink-0 aspect-[0.86] w-[25px]" />
+          <div class="flex-auto"><a href="KembalikanBuku">Kembalikan buku</a></div>
+        </div>
+        <div class="flex gap-4 mt-7 whitespace-nowrap">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c48306110fc090c44783725041e9a4a01f51f1f38c250b2ad64a43c1789ebd38?" class="shrink-0 aspect-square w-[29px]" />
+          <div class="flex-auto my-auto"><a href="ProfileMhs">Profile</a></div>
+        </div>
+        <div class="flex gap-4 mt-8">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/87b551cf3aa5a343fcfd98828ff6a3e81da468dc042b833246ce10edcd57e44f?" class="shrink-0 aspect-square w-[33px]" />
+          <div class="flex-auto my-auto"><a href="RiwayatPeminjaman">Riwayat peminjaman</a></div>
+        </div>
+        <div class="flex gap-5 mt-9">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a33e1545f0e1600b4a06c1ea80cb88c0790aa555d25c184928c8945a1779dba?" class="shrink-0 aspect-[1.14] w-[33px]" />
+          <div class="flex-auto my-auto"><a href="/logout">Log Out
+            </a></div>
+        </div>
+      </div>
+    </nav>
+    <main class="flex flex-col ml-5 w-[73%] max-md:ml-0 max-md:w-full">
+      <section class="flex flex-col mt-7 max-md:mt-10 max-md:max-w-full">
+        <header class="self-start px-3.5 pt-5 pb-9 text-4xl font-extrabold rounded-md shadow-sm bg-slate-400 bg-opacity-20 text-slate-700">
+          Kembalikan buku
+        </header>
+        <div class="flex flex-col px-7 pt-12 pb-8 mt-5 text-black rounded-xl bg-slate-500 max-md:pl-5 max-md:max-w-full">
+          <form class="flex flex-col">
+            <div class="flex gap-3 items-start pt-1.5 pr-5 pb-20 pl-1 bg-slate-200 max-md:flex-wrap">
+              <div class="flex flex-col mt-1.5 text-xl">
+                <div class="flex gap-1.5 text-lg font-medium">
+                  <label for="kodePeminjaman" class="text-center">
+                    Kode<br />peminjaman
+                  </label>
+                  <label for="kodeBuku" class="my-auto">Kode Buku</label>
+                </div>
+                <div id="kodePeminjaman" class="self-end mt-6 text-center max-md:mr-2.5">BS001</div>
+                <div class="flex flex-col px-5 mt-1.5 text-center whitespace-nowrap">
+                  <div id="kodeBuku">PB0001</div>
+                  <div class="self-end mt-7">BS002</div>
+                </div>
+              </div>
+              <div class="flex flex-col max-md:max-w-full">
+                <div class="flex gap-5 text-lg font-medium max-md:flex-wrap">
+                  <div class="grow self-start mt-4 italic">
+                    Judul Buku (
+                    <span class="italic">penulis</span>
+                    )
+                  </div>
+                  <div class="flex flex-auto gap-3.5 text-center">
+                    <div>Tanggal Peminjaman</div>
+                    <div>Durasi Peminjaman</div>
+                    <div>Tanggal Jatuh tempo</div>
+                  </div>
+                </div>
+                <div class="flex gap-5 mt-6 text-xl max-md:flex-wrap">
+                  <div class="flex-auto italic">
+                    Matematika Distrik (<span class="italic">agif</span>)
+                  </div>
+                  <div class="flex-auto">29-05-2024</div>
+                  <div>6 Hari</div>
+                  <div class="flex-auto">05-06-2024</div>
+                </div>
+              </div>
+              <div class="flex flex-col mt-4 text-sm font-light whitespace-nowrap text-neutral-100">
+                <div class="self-center text-lg font-medium text-center text-black">Ajukan</div>
+                <button class="justify-center px-6 py-1.5 mt-5 rounded-xl bg-slate-500 max-md:px-5">
+                  Pengembalian
+                </button>
+                <button class="justify-center px-8 py-1.5 rounded-xl bg-slate-500 max-md:px-5">
+                  Perpanjang
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>

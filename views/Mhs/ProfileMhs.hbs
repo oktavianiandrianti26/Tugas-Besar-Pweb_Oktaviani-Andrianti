@@ -1,0 +1,70 @@
+<div class="bg-slate-200">
+  <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+    <aside class="flex flex-col w-[28%] max-md:ml-0 max-md:w-full">
+      <nav aria-label="Main Navigation" class="flex flex-col grow items-start py-20 pr-20 pl-6 mx-auto w-full text-xl font-semibold text-white bg-slate-700 max-md:px-5 max-md:mt-9">
+        <div class="self-center text-4xl font-extrabold">SIBACA</div>
+        <div class="flex gap-5 mt-11 whitespace-nowrap max-md:mt-10">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b60de2b05833aae014f700c15004065d740f7d013e04abe31fc4ffff3485b48b?" class="shrink-0 aspect-[1.03] w-[30px]" />
+          <div class="flex-auto my-auto"><a href="dashboardMhs">Dashboard</a></div>
+        </div>
+        <div class="flex gap-5 mt-9">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e365d1cf19fd1044d2daa4f94170b7f2820a62d9c007c82d8d8a3d92dc531247?" class="shrink-0 aspect-[0.86] w-[25px]" />
+          <div class="flex-auto my-auto"><a href="LihatBuku">Lihat Buku</a></div>
+        </div>
+        <div class="flex gap-5 mt-8">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7089de8e39479018adcd656b47318a42920e119966f6c5dd3b5cc790b623c66e?" class="shrink-0 aspect-[0.86] w-[25px]" />
+          <div class="flex-auto"><a href="PinjamBuku">Pinjam Buku</a></div>
+        </div>
+        <div class="flex gap-5 mt-8">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/10ca86c0fa9f5c4743f2eac8520827b728b57241d504744cbd15b00d130920c4?" class="shrink-0 aspect-[0.86] w-[25px]" />
+          <div class="flex-auto"><a href="KembalikanBuku">Kembalikan buku</a></div>
+        </div>
+        <div class="flex gap-4 mt-7 whitespace-nowrap">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c48306110fc090c44783725041e9a4a01f51f1f38c250b2ad64a43c1789ebd38?" class="shrink-0 aspect-square w-[29px]" />
+          <div class="flex-auto my-auto"><a href="ProfileMhs">Profile</a></div>
+        </div>
+        <div class="flex gap-4 mt-8">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/87b551cf3aa5a343fcfd98828ff6a3e81da468dc042b833246ce10edcd57e44f?" class="shrink-0 aspect-square w-[33px]" />
+          <div class="flex-auto my-auto"><a href="RiwayatPeminjaman">Riwayat peminjaman</a></div>
+        </div>
+        <div class="flex gap-5 mt-9">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a33e1545f0e1600b4a06c1ea80cb88c0790aa555d25c184928c8945a1779dba?" class="shrink-0 aspect-[1.14] w-[33px]" />
+          <div class="flex-auto my-auto"><a href="/logout">Log Out
+            </a></div>
+        </div>
+      </nav>
+    </aside>
+    <main class="flex flex-col ml-5 w-[72%] max-md:ml-0 max-md:w-full">
+      <section aria-labelledby="profile-section" class="flex flex-col self-stretch px-14 py-8 my-auto w-full text-xl font-semibold text-white rounded-3xl bg-slate-500 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/dbd919bafa36907c96b79d261d48549367bdf56bffc3357f470fa3f0b8018ff0?apiKey=863c3774457247cf9941fba7937e9907&"
+          alt="Profile Picture"
+          class="self-center max-w-full aspect-[1.15] w-[161px]"
+        />
+        <label for="name" class="self-start mt-11 ml-3.5 max-md:mt-10 max-md:ml-2.5">Nama</label>
+        <input type="text" id="name" class="justify-center items-start px-6 py-5 mt-2 whitespace-nowrap bg-white rounded-3xl text-zinc-600 text-opacity-50 max-md:px-5 max-md:max-w-full" placeholder="Nama" aria-label="Enter your name" />
+        <label for="nim" class="self-start mt-7 ml-3.5 max-md:ml-2.5">NIM</label>
+        <input type="text" id="nim" class="justify-center items-start px-6 py-5 mt-2 whitespace-nowrap bg-white rounded-3xl text-zinc-600 text-opacity-50 max-md:px-5 max-md:max-w-full" placeholder="NIM" aria-label="Enter your NIM" />
+        <label for="email" class="self-start mt-7 ml-3.5 max-md:ml-2.5">Email</label>
+        <input type="email" id="email" class="justify-center items-start px-6 py-5 mt-2 whitespace-nowrap bg-white rounded-3xl text-zinc-600 text-opacity-50 max-md:px-5 max-md:max-w-full" placeholder="Email" aria-label="Enter your email" />
+        <label for="phone" class="self-start mt-7 ml-3.5 max-md:ml-2.5">No HP</label>
+        <input type="tel" id="phone" class="justify-center items-start px-6 py-5 mt-2 bg-white rounded-3xl text-zinc-600 text-opacity-50 max-md:px-5 max-md:max-w-full" placeholder="No HP" aria-label="Enter your phone number" />
+        <label for="address" class="self-start mt-7 ml-3.5 max-md:ml-2.5">Alamat</label>
+        <input
+          type="text"
+          id="address"
+          class="justify-center items-start px-6 py-5 mt-2 whitespace-nowrap bg-white rounded-3xl text-zinc-600 text-opacity-50 max-md:px-5 max-md:max-w-full"
+          placeholder="Alamat"
+          aria-label="Enter your address"
+        />
+        <label for="role" class="self-start mt-8 ml-3.5 max-md:ml-2.5">Role</label>
+        <input type="text" id="role" class="justify-center items-start px-6 py-5 mt-1.5 bg-white rounded-3xl text-zinc-600 text-opacity-50 max-md:px-5 max-md:max-w-full" placeholder="Masukkan nama" aria-label="Enter your role" />
+        <div class="flex gap-5 justify-between self-end mt-10 max-md:flex-wrap">
+          <button class="justify-center px-7 py-3 rounded-3xl bg-slate-700 max-md:px-5"><a href="password">Ubah Password</a></button>
+          <button class="justify-center px-14 py-2.5 rounded-3xl bg-slate-700 max-md:px-5">Edit Profile</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>

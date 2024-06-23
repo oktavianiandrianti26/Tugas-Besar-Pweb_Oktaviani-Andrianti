@@ -1,0 +1,228 @@
+<div class="pr-10 bg-slate-200 max-md:pr-5">
+  <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+    <aside class="flex flex-col w-[27%] max-md:ml-0 max-md:w-full">
+      <nav class="flex flex-col grow items-start py-20 pr-20 pl-6 mx-auto w-full text-xl font-semibold text-white bg-slate-700 max-md:px-5 max-md:mt-7">
+        <h1 class="self-center text-4xl font-extrabold">SIBACA</h1>
+        <a href="dashboardMhs" class="flex gap-5 mt-11 whitespace-nowrap max-md:mt-10 hover:text-gray-300" tabindex="0">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b60de2b05833aae014f700c15004065d740f7d013e04abe31fc4ffff3485b48b?apiKey=863c3774457247cf9941fba7937e9907&"
+            class="shrink-0 aspect-[1.03] w-[30px]"
+            alt="Dashboard Icon"
+          />
+          <span class="flex-auto my-auto">Dashboard</span>
+        </a>
+        <a href="#lihat-buku" class="flex gap-5 mt-9 hover:text-gray-300" tabindex="0">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e365d1cf19fd1044d2daa4f94170b7f2820a62d9c007c82d8d8a3d92dc531247?apiKey=863c3774457247cf9941fba7937e9907&"
+            class="shrink-0 aspect-[0.86] w-[25px]"
+            alt="Lihat Buku Icon"
+          />
+          <span class="flex-auto my-auto">Lihat Buku</span>
+        </a>
+        <a href="PinjamBuku" class="flex gap-5 mt-8 hover:text-gray-300" tabindex="0">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/7089de8e39479018adcd656b47318a42920e119966f6c5dd3b5cc790b623c66e?apiKey=863c3774457247cf9941fba7937e9907&"
+            class="shrink-0 aspect-[0.86] w-[25px]"
+            alt="Pinjam Buku Icon"
+          />
+          <span class="flex-auto">Pinjam Buku</span>
+        </a>
+        <a href="kembalikanBuku" class="flex gap-5 mt-8 hover:text-gray-300" tabindex="0">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/10ca86c0fa9f5c4743f2eac8520827b728b57241d504744cbd15b00d130920c4?apiKey=863c3774457247cf9941fba7937e9907&"
+            class="shrink-0 aspect-[0.86] w-[25px]"
+            alt="Kembalikan Buku Icon"
+          />
+          <span class="flex-auto">Kembalikan buku</span>
+        </a>
+        <a href="showProfile" class="flex gap-4 mt-7 whitespace-nowrap hover:text-gray-300" tabindex="0">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c48306110fc090c44783725041e9a4a01f51f1f38c250b2ad64a43c1789ebd38?apiKey=863c3774457247cf9941fba7937e9907&"
+            class="shrink-0 aspect-square w-[29px]"
+            alt="Profile Icon"
+          />
+          <span class="flex-auto my-auto">Profile</span>
+        </a>
+        <a href="#riwayat" class="flex gap-4 mt-8 hover:text-gray-300" tabindex="0">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/87b551cf3aa5a343fcfd98828ff6a3e81da468dc042b833246ce10edcd57e44f?apiKey=863c3774457247cf9941fba7937e9907&"
+            class="shrink-0 aspect-square w-[33px]"
+            alt="Riwayat Peminjaman Icon"
+          />
+          <span class="flex-auto my-auto">Riwayat peminjaman</span>
+        </a>
+        <a href="/logout" class="flex gap-5 mt-9 hover:text-gray-300" tabindex="0">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a33e1545f0e1600b4a06c1ea80cb88c0790aa555d25c184928c8945a1779dba?apiKey=863c3774457247cf9941fba7937e9907&"
+            class="shrink-0 aspect-[1.14] w-[33px]"
+            alt="Log Out Icon"
+          />
+          <span class="flex-auto my-auto">Log Out</span>
+        </a>
+      </nav>
+    </aside>
+    <main class="flex flex-col ml-5 w-[73%] max-md:ml-0 max-md:w-full">
+      <section class="flex flex-col self-stretch my-auto max-md:mt-10 max-md:max-w-full">
+        <header class="flex justify-center items-start px-5 py-7 max-w-full text-4xl font-extrabold rounded-md shadow-sm bg-slate-400 bg-opacity-20 text-slate-700 w-[280px] max-md:pr-5">
+          Lihat Buku
+        </header>
+        <form class="flex gap-5 self-center px-6 py-4 mt-3 max-w-full text-2xl font-light rounded-md shadow-sm bg-slate-400 text-zinc-600 w-[753px] max-md:flex-wrap max-md:px-5">
+          <label for="bookSearch" class="sr-only">Search any book...</label>
+          <input class="flex-auto" type="search" id="bookSearch" placeholder="Search any book..." aria-label="Search any book..." />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/148f1b3d42ccfe192a9e4af3c442add11e9fcf96e3b727501ffc77c9b2c1cab6?apiKey=863c3774457247cf9941fba7937e9907&"
+            alt="Search Icon"
+            class="shrink-0 self-start aspect-square w-[23px]"
+          />
+        </form>
+        <section class="flex flex-col items-start pt-7 pb-20 pl-9 mt-16 rounded-xl bg-slate-500 max-md:pl-5 max-md:mt-10 max-md:max-w-full">
+          <header class="self-stretch text-2xl text-white font-[250] max-md:max-w-full">
+            Hi Mhs, want some book rn?
+          </header>
+          <div class="flex gap-3 mt-4 text-2xl font-semibold text-black">
+            <span class="shrink-0 self-start w-1.5 bg-gray-900 h-[22px]"></span>
+            <span class="flex-auto">New collections + updated</span>
+          </div>
+          <div class="flex gap-5 justify-between mt-3.5 max-md:flex-wrap max-md:max-w-full">
+            <article class="flex flex-col pt-1.5 pr-2.5 pb-3 pl-1 text-lg font-medium text-black rounded-xl shadow-sm bg-slate-400">
+              <div class="flex gap-0 text-xs font-light">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0547e9340854244c730472cff3843e1917b94561088231b6c0c147e18fb7c71d?apiKey=863c3774457247cf9941fba7937e9907&"
+                  alt="Matematika Diskrit Book Cover"
+                  class="shrink-0 max-w-full aspect-[1.11] w-[143px]"
+                />
+                <p class="mt-3.5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+              </div>
+              <div class="flex gap-1.5 self-start mt-4 ml-6 max-md:ml-2.5">
+                <span class="shrink-0 w-1.5 bg-gray-900 h-[22px]"></span>
+                <span class="flex-auto my-auto">Matematika Diskrit</span>
+              </div>
+              <div class="flex gap-3 mt-8 whitespace-nowrap text-neutral-100">
+                <button class="justify-center px-9 py-2 rounded-xl bg-slate-500 max-md:px-5">Pinjam</button>
+                <button class="justify-center items-start px-7 py-2.5 rounded-xl bg-slate-500 max-md:px-5">Detail</button>
+              </div>
+            </article>
+            <article class="flex flex-col px-2.5 py-3.5 font-medium text-black rounded-xl shadow-sm bg-slate-400">
+              <div class="flex gap-1.5 text-xs font-light">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/02d1d3aa1afc8f430e213c4083cefc8a5cbff907ef196169fb94c15269677221?apiKey=863c3774457247cf9941fba7937e9907&"
+                  alt="Computer Enginneering for babies Book Cover"
+                  class="shrink-0 max-w-full aspect-[1.22] w-[123px]"
+                />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+              </div>
+              <div class="flex gap-2 mt-9 text-lg">
+                <span class="shrink-0 self-start w-1.5 bg-gray-900 h-[22px]"></span>
+                <span class="flex-auto">Computer Enginneering<br /> for babies</span>
+              </div>
+              <div class="flex gap-3 mt-3.5 text-lg whitespace-nowrap text-neutral-100">
+                <button class="justify-center px-9 py-2 rounded-xl bg-slate-500 max-md:px-5">Pinjam</button>
+                <button class="justify-center items-start px-7 py-2.5 rounded-xl bg-slate-500 max-md:px-5">Detail</button>
+              </div>
+            </article>
+            <article class="flex flex-col py-3 pr-1.5 pl-3.5 font-medium text-black rounded-xl shadow-sm bg-slate-400">
+              <div class="flex gap-2.5 text-xs font-light">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/95a5ffb2072c3ea38fbd6b0df21f3f98d85b864fe5fa0d1e87435c7dda343d8c?apiKey=863c3774457247cf9941fba7937e9907&"
+                  alt="enchanted talisman Book Cover"
+                  class="shrink-0 max-w-full aspect-[0.96] w-[116px]"
+                />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+              </div>
+              <div class="flex gap-2 mt-4 text-lg">
+                <span class="shrink-0 w-1.5 bg-gray-900 h-[22px]"></span>
+                <span class="flex-auto my-auto">enchanted talisman</span>
+              </div>
+              <div class="flex gap-3 mt-8 text-lg whitespace-nowrap text-neutral-100">
+                <button class="justify-center px-9 py-2 rounded-xl bg-slate-500 max-md:px-5">Pinjam</button>
+                <button class="justify-center items-start px-7 py-2.5 rounded-xl bg-slate-500 max-md:px-5">Detail</button>
+              </div>
+            </article>
+            <article class="flex flex-col justify-center items-start px-12 rounded-xl shadow-sm bg-slate-400">
+              <div class="z-10 shrink-0 mt-0 rounded-xl bg-slate-200 h-[405px] max-md:hidden"></div>
+            </article>
+          </div>
+          <div class="mt-6 ml-5 text-2xl font-semibold text-black max-md:ml-2.5">
+            New collections + updated
+          </div>
+          <div class="flex gap-5 justify-between mt-3.5 mb-4 max-md:flex-wrap max-md:max-w-full">
+            <article class="flex flex-col pt-1.5 pr-2.5 pb-3 pl-1 rounded-xl shadow-sm bg-slate-400">
+              <div class="flex gap-0">
+                <figure class="flex overflow-hidden relative flex-col items-start px-7 pt-2.5 pb-20 aspect-[1.12] w-[143px] max-md:px-5">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/0547e9340854244c730472cff3843e1917b94561088231b6c0c147e18fb7c71d?apiKey=863c3774457247cf9941fba7937e9907&"
+                    alt="Matematika Diskrit Book Cover"
+                    class="object-cover absolute inset-0 size-full"
+                  />
+                  <figcaption class="relative shrink-0 w-1.5 bg-gray-900 h-[22px]"></figcaption>
+                </figure>
+                <p class="mt-3.5 text-xs font-light text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+              </div>
+              <div class="flex gap-1.5 self-start mt-4 ml-6 text-lg font-medium text-black max-md:ml-2.5">
+                <span class="shrink-0 w-1.5 bg-gray-900 h-[22px]"></span>
+                <span class="flex-auto my-auto">Matematika Diskrit</span>
+              </div>
+              <div class="flex gap-3 mt-8 text-lg font-medium whitespace-nowrap text-neutral-100">
+                <button class="justify-center px-9 py-2 rounded-xl bg-slate-500 max-md:px-5">Pinjam</button>
+                <button class="justify-center items-start px-7 py-2.5 rounded-xl bg-slate-500 max-md:px-5">Detail</button>
+              </div>
+            </article>
+            <article class="flex flex-col px-2.5 py-3.5 font-medium text-black rounded-xl shadow-sm bg-slate-400">
+              <div class="flex gap-1.5 text-xs font-light">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/02d1d3aa1afc8f430e213c4083cefc8a5cbff907ef196169fb94c15269677221?apiKey=863c3774457247cf9941fba7937e9907&"
+                  alt="Computer Enginneering for babies Book Cover"
+                  class="shrink-0 max-w-full aspect-[1.22] w-[123px]"
+                />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+              </div>
+              <div class="flex gap-2 mt-9 text-lg">
+                <span class="shrink-0 self-start w-1.5 bg-gray-900 h-[22px]"></span>
+                <span class="flex-auto">Computer Enginneering<br /> for babies</span>
+              </div>
+              <div class="flex gap-3 mt-3.5 text-lg whitespace-nowrap text-neutral-100">
+                <button class="justify-center px-9 py-2 rounded-xl bg-slate-500 max-md:px-5">Pinjam</button>
+                <button class="justify-center items-start px-7 py-2.5 rounded-xl bg-slate-500 max-md:px-5">Detail</button>
+              </div>
+            </article>
+            <article class="flex flex-col py-3 pr-1.5 pl-3.5 font-medium text-black rounded-xl shadow-sm bg-slate-400">
+              <div class="flex gap-2.5 text-xs font-light">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/95a5ffb2072c3ea38fbd6b0df21f3f98d85b864fe5fa0d1e87435c7dda343d8c?apiKey=863c3774457247cf9941fba7937e9907&"
+                  alt="enchanted talisman Book Cover"
+                  class="shrink-0 max-w-full aspect-[0.96] w-[116px]"
+                />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+              </div>
+              <div class="flex gap-2 mt-4 text-lg">
+                <span class="shrink-0 w-1.5 bg-gray-900 h-[22px]"></span>
+                <span class="flex-auto my-auto">enchanted talisman</span>
+              </div>
+              <div class="flex gap-3 mt-8 text-lg whitespace-nowrap text-neutral-100">
+                <button class="justify-center px-9 py-2 rounded-xl bg-slate-500 max-md:px-5">Pinjam</button>
+                <button class="justify-center items-start px-7 py-2.5 rounded-xl bg-slate-500 max-md:px-5">Detail</button>
+              </div>
+            </article>
+            <article class="flex flex-col justify-center items-start px-12 rounded-xl shadow-sm bg-slate-400">
+              <div class="z-10 shrink-0 mt-0 rounded-xl bg-slate-200 h-[405px] max-md:hidden"></div>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+</div>

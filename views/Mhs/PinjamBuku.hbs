@@ -1,0 +1,74 @@
+<header class="pr-16 bg-slate-200 max-md:pr-5">
+  <nav class="flex gap-5 max-md:flex-col max-md:gap-0">
+    <aside class="flex flex-col w-[28%] max-md:ml-0 max-md:w-full">
+      <section class="flex flex-col grow items-start py-20 pr-20 pl-6 mx-auto w-full text-xl font-semibold text-white bg-slate-700 max-md:px-5 max-md:mt-10">
+        <div class="self-center text-4xl font-extrabold">SIBACA</div>
+        <div class="flex gap-5 mt-11 whitespace-nowrap max-md:mt-10">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b60de2b05833aae014f700c15004065d740f7d013e04abe31fc4ffff3485b48b?" class="shrink-0 aspect-[1.03] w-[30px]" />
+          <div class="flex-auto my-auto"><a href="dashboardMhs">Dashboard</a></div>
+        </div>
+        <div class="flex gap-5 mt-9">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e365d1cf19fd1044d2daa4f94170b7f2820a62d9c007c82d8d8a3d92dc531247?" class="shrink-0 aspect-[0.86] w-[25px]" />
+          <div class="flex-auto my-auto"><a href="LihatBuku">Lihat Buku</a></div>
+        </div>
+        <div class="flex gap-5 mt-8">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7089de8e39479018adcd656b47318a42920e119966f6c5dd3b5cc790b623c66e?" class="shrink-0 aspect-[0.86] w-[25px]" />
+          <div class="flex-auto"><a href="PinjamBuku">Pinjam Buku</a></div>
+        </div>
+        <div class="flex gap-5 mt-8">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/10ca86c0fa9f5c4743f2eac8520827b728b57241d504744cbd15b00d130920c4?" class="shrink-0 aspect-[0.86] w-[25px]" />
+          <div class="flex-auto"><a href="KembalikanBuku">Kembalikan buku</a></div>
+        </div>
+        <div class="flex gap-4 mt-7 whitespace-nowrap">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c48306110fc090c44783725041e9a4a01f51f1f38c250b2ad64a43c1789ebd38?" class="shrink-0 aspect-square w-[29px]" />
+          <div class="flex-auto my-auto"><a href="ProfileMhs">Profile</a></div>
+        </div>
+        <div class="flex gap-4 mt-8">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/87b551cf3aa5a343fcfd98828ff6a3e81da468dc042b833246ce10edcd57e44f?" class="shrink-0 aspect-square w-[33px]" />
+          <div class="flex-auto my-auto"><a href="RiwayatPeminjaman">Riwayat peminjaman</a></div>
+        </div>
+        <div class="flex gap-5 mt-9">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a33e1545f0e1600b4a06c1ea80cb88c0790aa555d25c184928c8945a1779dba?" class="shrink-0 aspect-[1.14] w-[33px]" />
+          <div class="flex-auto my-auto"><a href="/logout">Log Out
+            </a></div>
+        </div>
+      </section>
+    </aside>
+    <main class="flex flex-col ml-5 w-[72%] max-md:ml-0 max-md:w-full">
+      <section class="flex flex-col mt-10 max-md:mt-10 max-md:max-w-full">
+        <h2 class="self-start px-4 pt-3.5 pb-8 text-4xl font-extrabold rounded-md shadow-sm bg-slate-400 bg-opacity-20 text-slate-700 max-md:pr-5">
+          Pinjam Buku
+        </h2>
+        <article class="flex flex-col px-10 pt-5 pb-8 mt-7 rounded-3xl bg-slate-500 max-md:px-5 max-md:max-w-full">
+          <h3 class="text-3xl font-semibold text-black max-md:max-w-full">Buku 1</h3>
+          <label for="judulBuku" class="self-start mt-6 ml-6 text-xl font-semibold text-white max-md:ml-2.5">Judul Buku</label>
+          <input type="text" id="judulBuku" class="shrink-0 mt-2 rounded-3xl bg-zinc-300 h-[50px] w-full" aria-label="Judul Buku" placeholder=" Masukkan judul" />
+          <label for="kategoriBuku" class="self-start mt-3 ml-6 text-xl font-semibold text-white max-md:ml-2.5">Kategori Buku</label>
+          <select id="kategoriBuku" class="shrink-0 mt-2 rounded-3xl bg-zinc-300 h-[50px] w-full" aria-label="Kategori Buku">
+            <option value="">Kategori</option>
+            <option value="">Select Category</option>
+            <option value="">Select Category2</option>
+          </select>
+          <label for="namaPenulis" class="self-start mt-3.5 ml-6 text-xl font-semibold text-white max-md:ml-2.5">Nama Penulis</label>
+          <input type="text" id="namaPenulis" class="shrink-0 mt-2 rounded-3xl bg-zinc-300 h-[50px] w-full" aria-label="Nama Penulis" placeholder=" Masukkan Nama Peulis" />
+          <label for="durasiPeminjaman" class="self-start mt-3.5 ml-6 text-xl font-semibold text-white max-md:ml-2.5">Durasi Peminjaman</label>
+          <select id="durasiPeminjaman" class="shrink-0 mt-2 rounded-3xl bg-zinc-300 h-[50px] w-full" aria-label="Kategori Buku">
+            <option value="">Durasi</option>
+            <option value="">1 Hari</option>
+            <option value="">2 Hari</option>
+          </select>
+          <button class="flex gap-2.5 self-center px-5 py-3.5 mt-7 text-2xl font-medium text-center text-white whitespace-nowrap rounded-3xl bg-slate-400 max-md:px-5 hover:bg-slate-600" tabindex="0">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/3497da4f52654fe75b292041ac48b209e4f48c3998ae671e195373c729d076ca?apiKey=863c3774457247cf9941fba7937e9907&"
+              class="shrink-0 self-start aspect-[1.14] w-[26px]"
+              alt="Tambah Icon"
+            />
+            <span class="flex-auto">Tambah</span>
+          </button>
+          <button class="justify-center self-end px-14 py-3 mt-4 max-w-full text-lg font-medium text-center text-white rounded-2xl bg-slate-700 w-[230px] max-md:px-5 hover:bg-slate-900" tabindex="0">Ajukan Peminjaman</button>
+        </article>
+      </section>
+    </main>
+  </nav>
+</header>

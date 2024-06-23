@@ -1,0 +1,100 @@
+<div class="pr-12 bg-slate-200 max-md:pr-5">
+  <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+    <div class="flex flex-col w-1/4 max-md:w-full">
+      <div class="flex flex-col grow items-start py-20 pr-20 pl-6 w-full text-xl font-semibold text-white bg-slate-700 max-md:px-5 max-md:mt-7">
+        <div class="self-center text-4xl font-extrabold">SIBACA</div>
+        <div class="flex gap-5 mt-11 whitespace-nowrap max-md:mt-10">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b60de2b05833aae014f700c15004065d740f7d013e04abe31fc4ffff3485b48b?"
+            class="shrink-0 aspect-[1.03] w-[30px]"
+          />
+          <div class="flex-auto my-auto"><a href="DashboardAdmin">Dashboard</a></div>
+        </div>
+        <div class="flex gap-5 mt-9">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e365d1cf19fd1044d2daa4f94170b7f2820a62d9c007c82d8d8a3d92dc531247?"
+            class="shrink-0 aspect-[0.86] w-[25px]"
+          />
+          <div class="flex-auto my-auto"><a href="ListPeminjaman">Data Peminjaman</a></div>
+        </div>
+        <div class="flex gap-5 mt-8">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/7089de8e39479018adcd656b47318a42920e119966f6c5dd3b5cc790b623c66e?"
+            class="shrink-0 aspect-[0.86] w-[25px]"
+          />
+          <div class="flex-auto"><a href="DataPengembalian">Data Pengembalian</a></div>
+        </div>
+        <div class="flex gap-5 mt-8">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/10ca86c0fa9f5c4743f2eac8520827b728b57241d504744cbd15b00d130920c4?"
+            class="shrink-0 aspect-[0.86] w-[25px]"
+          />
+          <div class="flex-auto"><a href="DataBuku">Data Buku</a></div>
+        </div>
+        <div class="flex gap-4 mt-7 whitespace-nowrap">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c48306110fc090c44783725041e9a4a01f51f1f38c250b2ad64a43c1789ebd38?"
+            class="shrink-0 aspect-square w-[29px]"
+          />
+          <div class="flex-auto my-auto"><a href="ProfileAdmin">Profile</a></div>
+        </div>
+        <div class="flex gap-5 mt-9">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a33e1545f0e1600b4a06c1ea80cb88c0790aa555d25c184928c8945a1779dba?"
+            class="shrink-0 aspect-[1.14] w-[33px]"
+          />
+          <div class="flex-auto my-auto"><a href="/logout">Log Out</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col w-3/4 max-md:w-full">
+      <div class="flex flex-col mt-7 max-md:mt-10 max-md:w-full">
+        <div class="self-start px-5 py-7 text-4xl font-extrabold whitespace-nowrap rounded-md text-slate-700 max-md:px-5">
+          Dashboard
+        </div>
+        <div class="flex gap-5 mt-6 max-md:flex-wrap max-md:w-full">
+          <div class="flex flex-col items-center px-1.5 pt-1 pb-6 text-xl font-semibold text-black bg-white rounded-xl shadow-sm w-1/4 max-md:w-full max-md:mb-4">
+            <img src="images/anggota.png" class="w-26" />
+            <div class="mt-3">Anggota</div>
+            <div class="mt-3">10</div>
+          </div>
+          <div class="flex flex-col items-center px-1.5 pt-1 pb-6 text-xl font-semibold text-black bg-white rounded-xl shadow-sm w-1/4 max-md:w-full max-md:mb-4">
+            <img src="images/buku.png" class="w-26" />
+            <div class="mt-3">Buku</div>
+            <div class="mt-3">25</div>
+          </div>
+          <div class="flex flex-col items-center px-1.5 pt-1 pb-6 text-xl font-semibold text-black bg-white rounded-xl shadow-sm w-1/4 max-md:w-full max-md:mb-4">
+            <img src="images/peminjaman.png" class="w-26" />
+            <div class="mt-3">Peminjaman</div>
+            <div class="mt-3">4</div>
+          </div>
+          <div class="flex flex-col items-center px-1.5 pt-1 pb-6 text-xl font-semibold text-black bg-white rounded-xl shadow-sm w-1/4 max-md:w-full max-md:mb-4">
+            <img src="images/pengembalian.png" class="w-26" />
+            <div class="mt-3">Pengembalian</div>
+            <div class="mt-3">2</div>
+          </div>
+        </div>
+        <div class="flex flex-col px-7 mt-14 bg-[#9DB2BF] rounded-xl text-black max-md:px-5 max-md:mt-10 max-md:max-w-full">
+          <div class="text-3xl font-semibold mt-4 max-md:max-w-full">Grafik Peminjaman Perbulan</div>
+             <div class="mt-6 text-2xl font-light bg-[#526D82] max-md:max-w-full">    
+                <form class="max-w-sm pb-20 ml-5 mt-5 mb-5 ">
+                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option value="US">2024</option>
+                    <option value="CA">2023</option>
+                    <option value="FR">2022</option>
+                    <option value="DE">2021</option>
+                </select>
+                </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

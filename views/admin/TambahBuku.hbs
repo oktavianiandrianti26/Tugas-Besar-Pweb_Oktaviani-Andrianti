@@ -1,0 +1,129 @@
+<div class="pr-12 bg-slate-200 max-md:pr-5">
+  <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+    <div class="flex flex-col w-1/4 max-md:w-full">
+      <div class="flex flex-col grow items-start py-20 pr-20 pl-6 w-full text-xl font-semibold text-white bg-slate-700 max-md:px-5 max-md:mt-7">
+        <div class="self-center text-4xl font-extrabold">SIBACA</div>
+        <div class="flex gap-5 mt-11 whitespace-nowrap max-md:mt-10">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b60de2b05833aae014f700c15004065d740f7d013e04abe31fc4ffff3485b48b?"
+            class="shrink-0 aspect-[1.03] w-[30px]"
+          />
+          <div class="flex-auto my-auto"><a href="DashboardAdmin">Dashboard</a></div>
+        </div>
+        <div class="flex gap-5 mt-9">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e365d1cf19fd1044d2daa4f94170b7f2820a62d9c007c82d8d8a3d92dc531247?"
+            class="shrink-0 aspect-[0.86] w-[25px]"
+          />
+          <div class="flex-auto my-auto"><a href="ListPeminjaman">Data Peminjaman</a></div>
+        </div>
+        <div class="flex gap-5 mt-8">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/7089de8e39479018adcd656b47318a42920e119966f6c5dd3b5cc790b623c66e?"
+            class="shrink-0 aspect-[0.86] w-[25px]"
+          />
+          <div class="flex-auto"><a href="DataPengembalian">Data Pengembalian</a></div>
+        </div>
+        <div class="flex gap-5 mt-8">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/10ca86c0fa9f5c4743f2eac8520827b728b57241d504744cbd15b00d130920c4?"
+            class="shrink-0 aspect-[0.86] w-[25px]"
+          />
+          <div class="flex-auto"><a href="DataBuku">Data Buku</a></div>
+        </div>
+        <div class="flex gap-4 mt-7 whitespace-nowrap">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c48306110fc090c44783725041e9a4a01f51f1f38c250b2ad64a43c1789ebd38?"
+            class="shrink-0 aspect-square w-[29px]"
+          />
+          <div class="flex-auto my-auto"><a href="ProfileAdmin">Profile</a></div>
+        </div>
+        <div class="flex gap-5 mt-9">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a33e1545f0e1600b4a06c1ea80cb88c0790aa555d25c184928c8945a1779dba?"
+            class="shrink-0 aspect-[1.14] w-[33px]"
+          />
+          <div class="flex-auto my-auto"><a href="/logout">Log Out</a></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="flex flex-col mb-20 ml-5 w-[72%] max-md:ml-0 max-md:w-full">
+      <form method="post" enctype="multipart/form-data" onsubmit="handleSubmit(event)">
+        <section class="flex flex-col mt-10 max-md:mt-10 max-md:max-w-full">
+          <h2 class="self-start px-4 pt-3.5 pb-4 text-4xl font-extrabold rounded-md text-slate-700 max-md:pr-5">
+            Tambah Buku
+          </h2>
+          <article class="flex flex-col px-10 pt-5 pb-8 mt-7 rounded-3xl bg-slate-500 max-md:px-5 max-md:max-w-full">
+          
+          <label for="coverbuku" class="self-start mt-6 ml-6 text-xl font-semibold text-white max-md:ml-2.5">Cover Buku</label>
+          <div class="relative">
+          <input name="cover" class="block w-full text-sm text-gray-900 border-gray-300 rounded-3xl cursor-pointer bg-gray-100 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 py-3 px-4" id="coverbuku" type="file" aria-label="Cover Buku">
+          </div>
+          
+          <label for="kodebuku" class="self-start mt-6 ml-6 text-xl font-semibold text-white max-md:ml-2.5">Kode Buku</label>
+          <input type="text" name="Kode_Buku" id="kodebuku" class="shrink-0 mt-2 rounded-3xl bg-zinc-100 h-[50px] w-full pl-5" aria-label="Kode Buku" placeholder="Masukkan kode" />
+
+          <label for="judulBuku" class="self-start mt-6 ml-6 text-xl font-semibold text-white max-md:ml-2.5">Judul Buku</label>
+          <input type="text" name="Judul" id="judulBuku" class="shrink-0 mt-2 rounded-3xl bg-zinc-100 h-[50px] w-full pl-5" aria-label="Judul Buku" placeholder="Masukkan judul" />
+
+          <label for="kategoriBuku" class="self-start mt-3 ml-6 text-xl font-semibold text-white max-md:ml-2.5">Kategori Buku</label>
+          <select id="kategoriBuku" class="shrink-0 mt-2 rounded-3xl bg-zinc-100 h-[50px] w-full pl-5" aria-label="Kategori Buku" name="ID_Kategori">
+            {{#each categories}}
+            <option value="{{this.ID_Kategori}}">{{this.Nama_Kategori}}</option>
+            {{/each}}
+              {{!-- <option value="" disabled selected>Kategori</option>
+              <option value="1">Fiksi</option>
+              <option value="2">Non-Fiksi</option>
+              <option value="3">Sci-Fi</option> --}}
+          </select>
+
+          <label for="penerbit" class="self-start mt-3.5 ml-6 text-xl font-semibold text-white max-md:ml-2.5">penerbit</label>
+          <input type="text" name="Penulis" id="penerbit" class="shrink-0 mt-2 rounded-3xl bg-zinc-100 h-[50px] w-full pl-5" aria-label="penerbit" placeholder=" Masukkan Nama Penerbit" />
+
+          <label for="pengarang" class="self-start mt-3.5 ml-6 text-xl font-semibold text-white max-md:ml-2.5">pengarang</label>
+          <input type="text" name="Pengarang" id="pengarang" class="shrink-0 mt-2 rounded-3xl bg-zinc-100 h-[50px] w-full pl-5" aria-label="pengarang" placeholder=" Masukkan Nama Pengarang" />
+
+          <label for="tahunTerbit" class="self-start mt-3.5 ml-6 text-xl font-semibold text-white max-md:ml-2.5">Tahun Terbit</label>
+          <input type="text" name="Tahun_Terbit" id="tahunTerbit" class="shrink-0 mt-2 rounded-3xl bg-zinc-100 h-[50px] w-full pl-5" aria-label="tahunTerbit" placeholder=" Masukkan Tahun Terbit" />
+
+          <label for="jumlahBuku" class="self-start mt-3.5 ml-6 text-xl font-semibold text-white max-md:ml-2.5">Jumlah Buku</label>
+          <input type="text" name="Stok" id="jumlahBuku" class="shrink-0 mt-2 rounded-3xl bg-zinc-100 h-[50px] w-full pl-5" aria-label="jumlahBuku" placeholder=" Masukkan Jumlah Buku" />
+
+          <button type="submit" class="flex gap-2.5 self-center px-4 py-3 mt-7 text-2xl font-medium text-center text-white whitespace-nowrap rounded-3xl bg-[#27374D] max-md:px-5 hover:bg-slate-600" tabindex="0">
+              <span>Simpan</span></button>
+        </section>
+      </form>
+      
+    </main>
+  </nav>
+</header>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+  async function handleSubmit(event) {
+    event.preventDefault(); // Prevent the default form submission
+    const form = event.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await axios.post(`http://localhost:5000/addBook`, formData, {
+          headers: {
+              "Content-Type": "multipart/form-data"
+          }
+      });
+      alert('Buku berhasil ditambahkan');
+      window.location.href = '/DataBuku';
+      // Handle success (e.g., display a success message, redirect, etc.)
+    } catch (error) {
+      console.error('Error adding book:', error);
+      // Handle error (e.g., display an error message)
+    }
+  }
+</script>

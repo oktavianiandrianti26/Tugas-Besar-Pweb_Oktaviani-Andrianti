@@ -1,0 +1,27 @@
+<section class="bg-gray-50 flex items-center justify-center">
+    <div class="bg-[#27374D] flex rounded-3xl mt-20 shadow-lg max-w-3xl text-white">
+        
+        <div class="sm:w-1/2 px-16 p-5">
+            <h2 class="font-bold mt-9 flex justify-center text-2xl">SIBACA FTI</h2>
+            <p class="text-xs mt-2 flex justify-center">Welcome back! Please enter your details.</p>
+            
+            <form method="POST" action="/showProfile"  class="flex flex-col mt-9 gap-1" >
+                <p class="text-xs mt-2 ml-2 flex">Email</p>
+                <input class="p-2 text-black rounded-3xl border" type="text" name="email" placeholder=" Email" id="">
+                
+                <p class="text-xs mt-2 ml-2 flex">Password</p>
+                <input class="p-2 text-black rounded-3xl border" type="password" name="password" placeholder=" Password" id="">
+                
+                <a href="password.hbs" class="text-xs mt-5 ml-2 flex items-center justify-center hover:text-[#0044CC]">Forgot Password</a>
+
+                <button class="bg-[#9DB2BF] rounded-3xl mt-5 text-white text-ms py-2 hover:scale-105 duration-300">Sign in</button>
+
+                <p class="text-xs mt-5 ml-2 flex items-center justify-center">Don't have an account? Sign up for free</p>
+            </form>
+        </div>
+
+        <div class="sm:block hidden w-1/2">
+            <img class="rounded-2xl" src="images/GBLOGIN.jpg" alt="">
+        </div>
+    </div>
+</section>
